@@ -401,7 +401,7 @@ header .bag-button .counter-products{
 #materials{
     width: 100%;
     position: relative;
-    padding: 50px 0;
+    padding: 40px 0;
     
 }
 
@@ -441,31 +441,129 @@ header .bag-button .counter-products{
 }
 
 #materials .imagenes img{
-    padding: 25px 90px;
+    padding: 25px 40px;
 }
 
 #materials .imagen img{
     position: relative;
-    left: 99px;
+    left: 49px;
     bottom: -150px;
 }
 
 #materials .imagen::before{
     content: "";
-    width: 400px;
+    width: 250px;
     height: 300px;
     background: #f7f7f7;
     position: absolute;
     z-index: -1;
-    bottom: 270px;
-    right: -130px;
-    border-radius: 20px;
+    bottom: 290px;
+    right: 1px;
+    border-radius: 20px 0;
 }
 
 #materials .imagen img{
     box-shadow: 14px 14px 19px -10px #af7d43;
 }
 
+/* Estilos de Reviews */
+#reviews{
+    width: 100%;
+    position: relative;
+    padding: 90px 0;
+    text-align: center;
+}
+
+#reviews h3{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+#reviews h2{
+    font-size: var(--fs-title2);
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--dark-color);
+    text-transform: uppercase;
+}
+
+#reviews .card-reviews{
+    position: relative;
+}
+
+#reviews .card-reviews .cont-info{
+    background: var(--white-color);
+    position: absolute;
+    width: 78%;
+    bottom: 20px;
+    border-radius: 30px;
+    left: 5%;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#reviews .card-reviews .cont-info img{
+    position: absolute;
+    top: -35px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border: 10px solid #fff;
+    border-radius: 50%;
+}
+
+#reviews .card-reviews .cont-info h4{
+    font-size: var(--fs-titel4);
+    color: var(--dark-color);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#reviews .card-reviews .cont-info h5{
+    font-size:12px;
+    color: var(--dark-color);
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#reviews .card-reviews .cont-info p{
+    font-size: 15px;
+    color: var(--dark-color);
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+#reviews .star i{
+    color: #faac54;
+}
+
+#reviews .star i:nth-child(5){
+    opacity: 0.5;
+}
+
+#reviews .slick-arrow{
+    background: var(--white-color);
+    width: 20px;
+    padding: 20px;
+    z-index: 999;
+    border-radius: 50%;
+    color: #0d1b39;
+    border: 1px solid #dbdada;
+    display: flex;             /* centra el icono dentro */
+    justify-content: center;
+    align-items: center;
+    position: absolute;        /* que se ubique sobre el slider */
+    top: 50%;                  /* lo manda al centro vertical */
+    transform: translateY(-50%);
+}
+
+#reviews .slick-arrow::before{
+    color: #0d1b39;
+}
 
 
 /*6.Estilo de responsive Tablet */
