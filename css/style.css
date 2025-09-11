@@ -600,6 +600,12 @@ footer .texto p{
     color: var(--dark-color);
     line-height: 1.6;
 }
+footer .texto a{
+    color: var(--dark-color);
+    text-decoration: none;
+    display: block;
+    padding:10px 0;
+}
 
 footer .derechos{
     padding-top: 70px;
@@ -614,10 +620,33 @@ footer .derechos p{
 
 /*6.Estilo de responsive Tablet */
 @media screen and (min-width:768px) and (max-width:1080px){
+    #hero {
+        padding: 90px 40px;
+    }
 
+    header {
+        height: 90vh;
+    }
+
+    #hero h2 {
+        font-size: 70px;
+    }
+
+    #hero p {
+        padding: 20px 200px;
+    }
+
+    #experiences .img img{
+        width: 100%;
+    }
 }
 /*7.Estilo de responsive Smartphone*/
 @media screen and (min-width:320px) and (max-width:767px){
-    
+    header {
+        height: 50vh;
+    }
+    #hero {
+        padding: 10px 100px;
+    }
 }
 
