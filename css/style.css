@@ -312,11 +312,161 @@ header .bag-button .counter-products{
     border-radius: 50%;
     color: #0d1b39;
     border: 1px solid #dbdada;
+    display: flex;             /* centra el icono dentro */
+    justify-content: center;
+    align-items: center;
+    position: absolute;        /* que se ubique sobre el slider */
+    top: 50%;                  /* lo manda al centro vertical */
+    transform: translateY(-50%);
 }
 
 #products .slick-arrow::before{
     color: #0d1b39;
 }
+
+/* Estilos de experiencias */
+#experiences{
+    width: 100%;
+    position: relative;
+    padding: 140px 0;
+}
+
+#experiences .img{
+    position: relative;
+    left: -20px;
+}
+
+#experiences .img::before{
+    content: "";
+    width: 400px;
+    height: 300px;
+    background: #f7f7f7;
+    position: absolute;
+    z-index: -1;
+    top: -60px;
+    border-radius: 20px;
+}
+
+#experiences .img::after{
+    content: "";
+    width: 400px;
+    height: 300px;
+    background: #f7f7f7;
+    position: absolute;
+    z-index: -1;
+    bottom: 70px;
+    right: 90px;
+    border-radius: 20px;
+}
+
+#experiences .img img{
+    box-shadow: -15px 16px 19px -10px #af7d43;
+}
+
+#experiences .info{
+    padding: 20px 60px 0 0 ;
+}
+
+#experiences .info h3{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#experiences .info h2{
+    font-size: var(--fs-title2);
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--dark-color);
+    text-transform: uppercase;
+}
+
+#experiences .info p{
+    font-size: var(--fs-text);
+    color: var(--dark-color);
+    margin-top: 20px;
+}
+
+#experiences .info a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#experiences .info a i{
+    margin-left: 4px;
+    transition: .5s;
+}
+
+/* Estilos de materiales */
+#materials{
+    width: 100%;
+    position: relative;
+    padding: 50px 0;
+    
+}
+
+#materials .datos{
+    padding: 150px 50px;
+}
+
+#materials .datos h3{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+#materials .datos h2{
+    font-size: var(--fs-title2);
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--dark-color);
+    text-transform: uppercase;
+}
+
+#materials .datos p{
+    font-size: var(--fs-text);
+    color: var(--dark-color);
+    margin-top: 20px;
+}
+
+#materials .datos a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#materials .datos a i{
+    margin-left: 4px;
+    transition: .5s;
+}
+
+#materials .imagenes img{
+    padding: 25px 90px;
+}
+
+#materials .imagen img{
+    position: relative;
+    left: 99px;
+    bottom: -150px;
+}
+
+#materials .imagen::before{
+    content: "";
+    width: 400px;
+    height: 300px;
+    background: #f7f7f7;
+    position: absolute;
+    z-index: -1;
+    bottom: 270px;
+    right: -130px;
+    border-radius: 20px;
+}
+
+#materials .imagen img{
+    box-shadow: 14px 14px 19px -10px #af7d43;
+}
+
+
 
 /*6.Estilo de responsive Tablet */
 @media screen and (min-width:768px) and (max-width:1080px){
