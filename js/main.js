@@ -41,6 +41,8 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
+    autoplaySpeed: 2000,
+    lazyLoad: 'ondemand',
         responsive:[
             {
                 breakpoint: 1024,
