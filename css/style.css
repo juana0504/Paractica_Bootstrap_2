@@ -32,7 +32,7 @@ p,a,button,li,label,input,select,textarea,span{
 
 /*5.Desktop*/
 *{
-    /* scrollbar-width: none; */
+    scrollbar-width: none;
 }
 header{
     width: 100%;
