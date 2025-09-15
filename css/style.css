@@ -245,6 +245,7 @@ header .bag-button .counter-products{
 #products .cont-img img{
     width: 220px;
     position: absolute;
+    max-width: 100%;
     top: -70px;
     margin: 0 auto;
     left: 0;
